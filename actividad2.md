@@ -31,3 +31,22 @@ Fin
 
 <img width="249" height="527" alt="Ejercicio2 drawio" src="https://github.com/user-attachments/assets/fcd028fc-25ed-4d41-b33f-296f0d4f97c4" />
 
+
+
+##TAREA##
+
+Curso se evaluan con 7 notas 
+conoce 6 notasd -> 70%
+Calcular cuanto debe de sabar en la evaluacion final para aprobar con 3.0
+
+
+#SOLUCION# 
+
+```
+Inicio
+Leer N1, N2, N3, N4, N5, N6.
+Promedio= N1+N2+N3+N4+N5+N6 / 6
+Total= ((Promedio * 0.7) - 3.0 )/0.3
+Escribir Nota minima para aprobar
+Fin
+```
