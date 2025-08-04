@@ -50,3 +50,7 @@ Total= ((Promedio * 0.7) - 3.0 )/0.3
 Escribir Nota minima para aprobar
 Fin
 ```
+
+#### DIAGRAMA DE FLUJO
+
+<img width="311" height="591" alt="Tarea 2 drawio" src="https://github.com/user-attachments/assets/0e24c454-d03a-496d-b22f-f11f981f1216" />
