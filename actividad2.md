@@ -54,3 +54,10 @@ Fin
 #### DIAGRAMA DE FLUJO
 
 <img width="311" height="591" alt="Tarea 2 drawio" src="https://github.com/user-attachments/assets/0e24c454-d03a-496d-b22f-f11f981f1216" />
+
+
+
+
+##Ejercicios 3
+Realice un algoritmo para determinar cuánto se debe pagar por equis cantidad de lápices considerando que si son 1000 o más el costo es de $85 cada uno; de lo contrario, el precio es de $90. Represéntelo con el pseudocódigo y el diagrama de flujo.
+
