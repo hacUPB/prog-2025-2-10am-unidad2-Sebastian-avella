@@ -155,4 +155,24 @@ Fin
 <img width="811" height="902" alt="Diagrama sin título drawio" src="https://github.com/user-attachments/assets/a80a289f-d8b0-4743-936e-d70e9bd27685" />
 
       
-      
+###Tarea
+  crear un pseudocódigo y diagrama de flujo con los siguientes pasos:
+Ingresar día, mes, año de nacimiento. (Tres variables de entrada). 
+Ingresar día, mes, año, actual (tres variables de entrada). 
+Calcular edad.
+
+###Pseudocodigo
+```
+Inicio
+Leer diaN, mesN, añoN   
+si
+    edad = añoA - añoN  
+
+    Si (mesA < mesN) o (mesA = mesN y diaA < diaN) Entonces
+        edad = edad - 1
+Fin Si
+Escribir "La edad es:", edad
+Fin
+
+```
+
