@@ -156,23 +156,47 @@ Fin
 
       
 ###Tarea
+
   crear un pseudocódigo y diagrama de flujo con los siguientes pasos:
 Ingresar día, mes, año de nacimiento. (Tres variables de entrada). 
 Ingresar día, mes, año, actual (tres variables de entrada). 
 Calcular edad.
 
+|Variables| Tipo| Comentario|
+|---------|-----|-----------|
+|Dia de nacimiento|Entrada|Dia en el que nacio|
+|Mes de nacimiento|Entrada|# mes en que nacio|
+|Año de nacimiento|Entrada|Año en que nacio|
+|Dia actual|Entrada|Dia actual|
+|Mes actual|Entrada|#Mes actual|
+|Año actual|Entrada|Año actual|
+|Edad|Salida|Edad que tiene|
+
 ###Pseudocodigo
+
 ```
 Inicio
-Leer diaN, mesN, añoN   
-si
-    edad = añoA - añoN  
-
-    Si (mesA < mesN) o (mesA = mesN y diaA < diaN) Entonces
-        edad = edad - 1
-Fin Si
-Escribir "La edad es:", edad
+Leer Dia de nacimiento, Mes de nacimiento, Año de nacimiento, Dia actual, Mes actual, Año actual
+Si Mes de nacimiento < Mes actual
+    Fin si
+    Edad = Año actual - Año de nacimiento
+Si no 
+    Si mes de nacimiento > mes actual
+        Fin si
+        Edad = (Año actual - año de nacimiento) - 1
+    Si no
+        mes de nacimiento = mes actual    
+            Si Dia de nacimiento <= Dia actual 
+                Fin si 
+                Edad = Año actual - Año de nacimiento 
+            Si no 
+                Edad = (Año actual - año de nacimiento) - 1
+        
+Escribir "Tu edad es"; Edad
 Fin
-
 ```
+
+### Diagrama de flujo 
+<img width="778" height="1082" alt="image" src="https://github.com/user-attachments/assets/25f75fce-4b2a-4c73-987c-4d10343eaad9" />
+
 
