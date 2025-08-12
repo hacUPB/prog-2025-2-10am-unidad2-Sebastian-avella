@@ -155,7 +155,7 @@ Fin
 <img width="811" height="902" alt="Diagrama sin título drawio" src="https://github.com/user-attachments/assets/a80a289f-d8b0-4743-936e-d70e9bd27685" />
 
       
-###Tarea
+### Tarea
 
   crear un pseudocódigo y diagrama de flujo con los siguientes pasos:
 Ingresar día, mes, año de nacimiento. (Tres variables de entrada). 
@@ -172,7 +172,7 @@ Calcular edad.
 |Año actual|Entrada|Año actual|
 |Edad|Salida|Edad que tiene|
 
-###Pseudocodigo
+### Pseudocodigo
 
 ```
 Inicio
@@ -200,3 +200,66 @@ Fin
 <img width="778" height="1082" alt="image" src="https://github.com/user-attachments/assets/25f75fce-4b2a-4c73-987c-4d10343eaad9" />
 
 
+
+# Ejercicios de bucles
+
+## Ejercicio 2
+
+Se requiere un algoritmo para determinar, de N cantidades, cuántas son 0, cuántas son menores a 0, y cuántas son mayor a 0.
+Realice el diagra,a de flujo y el pseudocodigo representarlo, utilizando el ciclo apropiado.
+
+## Pseudocodigo
+
+```
+Inicio
+Leer N
+Ceros=0
+Mayores=0
+Menores=0
+Mientras N>0:
+    Leer cant
+    Si Cant>0
+        Mayores= Mayores + 1
+    Si no
+        Si cant = 0
+            Ceros = ceros + 1
+        Si no
+            Menores = Menores + 1
+        Fin si
+    Fin si
+    N = N - 1
+Fin Mientras
+Mostrar ceros, mayores, menores
+Fin
+```
+
+### Pseudocodigo
+<img width="581" height="810" alt="o drawio" src="https://github.com/user-attachments/assets/f17a620b-e118-4b8f-b860-408afdfe2258" />
+
+
+## Ejercicio 3
+
+Calcular el factorial de un número entero ingresado por el usuario
+
+|Variables|Tipo|
+|---------|----|
+| N | Entrada |
+| Fact | Salida |
+| i/N | Control |
+
+```
+Inicio
+Leer N
+fact = 1
+Mientras N>0
+    Si N>0
+    Fact = fact * N
+    N=N-1
+    Fin mientras
+    Si no
+        Imprimir factorial
+Fin
+```
+
+### Diagrama de flujo
+<img width="368" height="583" alt="Diagrama sin título drawio" src="https://github.com/user-attachments/assets/95f3e3a0-b571-4501-bcf6-b93fb6b03f59" />
