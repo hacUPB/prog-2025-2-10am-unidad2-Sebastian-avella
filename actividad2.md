@@ -263,3 +263,47 @@ Fin
 
 ### Diagrama de flujo
 <img width="368" height="583" alt="Diagrama sin título drawio" src="https://github.com/user-attachments/assets/95f3e3a0-b571-4501-bcf6-b93fb6b03f59" />
+
+
+
+
+### Tarea 
+Ejercicio 2.
+Consultar cómo funcionan las tarjetas de crédito. Asumir una tasa de interés fija (2%). Preguntar al usuario el valor de la compra y el número de cuotas. Calcular y mostrar en pantalla. El valor de cada una de las cuotas que debe pagar hasta saldar la deuda. 
+| Variable  | Tipo |Descripción                                               |
+| ------------- | -------- | ------------------------------------------------------------- |
+| valor\_compra | Entrada  | Monto total de la compra realizada con la tarjeta de crédito. |
+| num\_cuotas   | Entrada  | Número de cuotas en las que se pagará la deuda.               |
+| tasa          | Proceso  | Tasa de interés mensual fija (0.02 para 2%).                  |
+| cuota         | Salida   | Valor de cada cuota fija a pagar.                             |
+
+
+
+### PSEUDOCODIGO
+```
+Inicio
+    // Entrada de datos
+    Leer valor_compra
+    Leer num_cuotas
+    tasa ← 0.02  // 2% mensual
+
+    // Fórmula de cuota fija (sistema francés)
+    cuota ← valor_compra * (tasa * (1 + tasa) ^ num_cuotas) / ((1 + tasa) ^ num_cuotas - 1)
+
+    // Mostrar resultado
+    Mostrar "Valor de cada cuota: ", cuota
+
+    // Mostrar el detalle de pagos
+    saldo ← valor_compra
+    Para i desde 1 hasta num_cuotas hacer
+        interes ← saldo * tasa
+        abono_capital ← cuota - interes
+        saldo ← saldo - abono_capital
+        Mostrar "Cuota ", i, ": ", cuota, " (Interés: ", interes, " - Capital: ", abono_capital, " - Saldo restante: ", saldo, ")"
+    FinPara
+Fin
+```
+
+### DIAGRAMA DE FLUJO
+
+<img width="311" height="591" alt="Diagrama sin título drawio" src="https://github.com/user-attachments/assets/8e85b277-8e5d-44ac-bdbd-5ffd472c9646" />
