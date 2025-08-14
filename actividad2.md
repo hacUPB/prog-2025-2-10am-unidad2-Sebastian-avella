@@ -280,28 +280,24 @@ Consultar cómo funcionan las tarjetas de crédito. Asumir una tasa de interés 
 
 
 ### PSEUDOCODIGO
+
 ```
 Inicio
-    // Entrada de datos
-    Leer valor_compra
-    Leer num_cuotas
-    tasa ← 0.02  // 2% mensual
-
-    // Fórmula de cuota fija (sistema francés)
-    cuota ← valor_compra * (tasa * (1 + tasa) ^ num_cuotas) / ((1 + tasa) ^ num_cuotas - 1)
-
-    // Mostrar resultado
-    Mostrar "Valor de cada cuota: ", cuota
-
-    // Mostrar el detalle de pagos
-    saldo ← valor_compra
-    Para i desde 1 hasta num_cuotas hacer
-        interes ← saldo * tasa
-        abono_capital ← cuota - interes
-        saldo ← saldo - abono_capital
-        Mostrar "Cuota ", i, ": ", cuota, " (Interés: ", interes, " - Capital: ", abono_capital, " - Saldo restante: ", saldo, ")"
-    FinPara
-Fin
+leer compra
+    leer cuotas
+    r = 0.02
+    si cuotas <= 0 entonces
+        escribir "numero de cuotas invalido"
+    sino
+        cuota = (compra + compra*r*cuotas) / cuotas
+        i = 1
+        mientras i <= cuotas hacer
+            escribir "cuota ", i, ": ", cuota
+            i = i + 1
+        fin mientras
+    fin si
+fin
+ 
 ```
 
 ### DIAGRAMA DE FLUJO
