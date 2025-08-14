@@ -303,3 +303,6 @@ fin
 ### DIAGRAMA DE FLUJO
 
 <img width="311" height="591" alt="Diagrama sin título drawio" src="https://github.com/user-attachments/assets/8e85b277-8e5d-44ac-bdbd-5ffd472c9646" />
+
+
+
